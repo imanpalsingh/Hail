@@ -10,7 +10,7 @@ The datastructure is build on the STL library of c++17 standard.Vectors are used
  
  To initialise an variable , create an object of the class Hail
  
- ```
+ ```cpp
  Hail object;
  ```
  
@@ -22,12 +22,12 @@ The datastructure is build on the STL library of c++17 standard.Vectors are used
  To load a csv file, call the get_csv function with the name/address of the file.
   
 Format:- 
-```
+```cpp
 Hail get_csv(const std::string &filename="input.csv", const char &column_seperator=',', const char &row_seperator='\n');
 ```
 Example :- 
 
-```
+```cpp
  Hail object;
  auto dataset = object.get_csv(Filename);
  ```
@@ -37,17 +37,17 @@ Example :-
  1) For column seperator - > Which defines what character marks end of the line ('\n' default)
  2) For row seperator -> Which defines which character distinguishes one value from another (',' default)
  
- <h4> 2)void version(const std::string&);</h4>
+ <h3>2) version</h4>
  
  This function can be used to set the version required (if required). If the version of the data structure is not same as the required one a warning will be raised.
  
  Format :-
- ```
+ ```cpp
  void version(const std::string&);
  ```
  Example :-
  
- ```
+ ```cpp
  Hail object
  object.version("0.0.2");
  ```
