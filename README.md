@@ -17,7 +17,9 @@ The datastructure is build on the STL library of c++17 standard.Vectors are used
  <h4> Functions </h4>
  This object can be used to call variety of I/O functions (though only csv supported yet).
  
-<h3>1)  get_csv </h3>
+<h3>1)  ```cpp
+Hail get_csv(const std::string &filename="input.csv", const char &column_seperator=',', const char &row_seperator='\n');
+``` </h3>
  
  To load a csv file, call the get_csv function with the name/address of the file.
   
