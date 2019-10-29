@@ -160,7 +160,7 @@ Example :-
     Hail object;
     auto Dataset = object.read_csv("Price.csv");
     auto Dataset_second = Dataset[0];
-    cout<<Dataset_second;
+    std::cout<<Dataset_second;
     return 0;
  }
  ```
