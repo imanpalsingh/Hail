@@ -31,11 +31,12 @@ Example :-
  Hail object;
  auto dataset = object.get_csv(Filename);
  ```
- If no parameters are specified then the data structure loads a file name 'input.csv' (if available) by default.
+ Parameters : -
+ 1) filename - >  Name or location of the csv file
+ 1) column_seperator - > Which defines what character marks end of the line ('\n' default)
+ 2) row_seperator -> Which defines which character distinguishes one value from another (',' default)
  
- Two additional parameters are available
- 1) For column seperator - > Which defines what character marks end of the line ('\n' default)
- 2) For row seperator -> Which defines which character distinguishes one value from another (',' default)
+ If no parameters are specified then the data structure loads a file name 'input.csv' (if available) by default.
  
  <h3>2) version</h4>
  
@@ -51,3 +52,8 @@ Example :-
  Hail object
  object.version("0.0.2");
  ```
+ Parameters : -
+ 1) version - > version as a string
+ 
+ 
+ 
