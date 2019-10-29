@@ -110,7 +110,7 @@ Example :-
  
  <h3> 1) Extraction operator (<<) </h3>
  
- The insertion operator is overloaded. Meaning that the datastructure can be directly printed.
+ The Extractiom operator is overloaded. Meaning that the datastructure can be directly printed.
  
  For example
  
