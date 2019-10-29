@@ -106,7 +106,7 @@ Example :-
  
  No parameters required.
  
- <h2 Overloaded functions </h2>
+ <h2> Overloaded functions </h2>
  
  <h3> 1) Insertion operator (<<) </h3>
  
