@@ -1,10 +1,10 @@
 # Hail
 
 
-<h4> Introduction </h4>
+<h2> Introduction </h2>
 The datastructure is build on the STL library of c++17 standard.Vectors are used as building block of this structure. The datastruture provides useful functions to extract data from files, manipulate it and save files. While currently being in the development stage it can only do a bit.
 
-<h4>Implementation</h4>
+<h2>Implementation</h2>
  
  Using Hail in programs is just easy as other pre-built datastrucures or even easier.
  
@@ -14,7 +14,7 @@ The datastructure is build on the STL library of c++17 standard.Vectors are used
  Hail object;
  ```
  
- <h4> Functions </h4>
+ <h2> Functions </h2>
  This object can be used to call variety of I/O functions (though only csv supported yet).
  
 <h3>1) get_csv </h3>
@@ -71,6 +71,82 @@ Example :-
  ```
  
  No parameters required.
+ 
+ <h3> 4) cols </h3>
+ 
+ This function returns the number of columns in the dataset
+ 
+ Format:-
+ 
+ ```cpp
+ int cols() const;
+ ```
+ Example
+ 
+ ```cpp
+ dataset.cols()
+ ```
+ 
+ No parameters required.
+ 
+ <h3> 3) size </h3>
+ 
+ This function returns the number of values/observations in the dataset
+ 
+ Format:-
+ 
+ ```cpp
+ int size() const;
+ ```
+ Example
+ 
+ ```cpp
+ dataset.size()
+ ```
+ 
+ No parameters required.
+ 
+ <h2 Overloaded functions </h2>
+ 
+ <h3> 1) Insertion operator (<<) </h3>
+ 
+ The insertion operator is overloaded. Meaning that the datastructure can be directly printed.
+ 
+ For example
+ 
+ ```cpp
+ #include "Hail.hpp"
+ #include<iostream>
+ 
+ 
+ int main()
+ {
+    Hail object;
+    auto Dataset = Hail.read_csv('Price.csv');
+    std::cout<<Dataset;
+    return 0;
+ }
+ 
+ ```
+ 
+ The output depending on the csv file would be
+ 
+ ```
+ Id Price
+ 1 20 
+ 2 30
+ 4 50
+ 6 90
+ 7 85
+ 
+ Number of rows = 5
+ Number of columns =2
+ Number of Observations = 10
+ ```
+ 
+ 
+ 
+ 
  
  
  
