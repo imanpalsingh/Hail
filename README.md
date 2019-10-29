@@ -122,7 +122,7 @@ Example :-
  int main()
  {
     Hail object;
-    auto Dataset = Hail.read_csv('Price.csv');
+    auto Dataset = Hail.read_csv("Price.csv");
     std::cout<<Dataset;
     return 0;
  }
@@ -140,12 +140,42 @@ Example :-
  7 85
  
  Number of rows = 5
- Number of columns =2
+ Number of columns = 2
  Number of Observations = 10
  ```
  
+ <h3> 1) Indexing ([]) </h3>
+ 
+ Objects of the Hail class can be index and be used to obtain subsets from the parent object. The modification through indexing is not yet supported
+ 
+ For example
+ 
+ ```cpp
+ #include "Hail.hpp"
+ #include<iostream>
  
  
+ int main()
+ {
+    Hail object;
+    auto Dataset = Hail.read_csv("Price.csv");
+    auto Dataset_second = Dataset[0];
+    cout<<Dataset_second;
+    return 0;
+ }
+ ```
+ 
+The outout of the program would be
+
+```
+ Id Price
+ 1 20 
+ 
+ Number of rows = 1
+ Number of columns = 2
+ Number of Observations = 2
+ 
+ ```
  
  
  
