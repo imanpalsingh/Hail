@@ -122,7 +122,7 @@ Example :-
  int main()
  {
     Hail object;
-    auto Dataset = Hail.read_csv("Price.csv");
+    auto Dataset = object.read_csv("Price.csv");
     std::cout<<Dataset;
     return 0;
  }
@@ -158,7 +158,7 @@ Example :-
  int main()
  {
     Hail object;
-    auto Dataset = Hail.read_csv("Price.csv");
+    auto Dataset = object.read_csv("Price.csv");
     auto Dataset_second = Dataset[0];
     cout<<Dataset_second;
     return 0;
