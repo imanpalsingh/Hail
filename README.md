@@ -108,7 +108,7 @@ Example :-
  
  <h2> Overloaded functions </h2>
  
- <h3> 1) Insertion operator (<<) </h3>
+ <h3> 1) Extraction operator (<<) </h3>
  
  The insertion operator is overloaded. Meaning that the datastructure can be directly printed.
  
