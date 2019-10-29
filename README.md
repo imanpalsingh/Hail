@@ -55,5 +55,23 @@ Example :-
  Parameters : -
  1) version - > version as a string
  
+ <h3> 3) rows </h3>
+ 
+ This function returns the number of rows in the dataset
+ 
+ Format:-
+ 
+ ```cpp
+ int rows() const;
+ ```
+ Example
+ 
+ ```cpp
+ dataset.rows()
+ ```
+ 
+ No parameters required.
+ 
+ 
  
  
