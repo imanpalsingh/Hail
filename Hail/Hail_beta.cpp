@@ -16,12 +16,7 @@
 */
 
 
-/*
- *
- * Variable name :- _version
- * Description : -  _version stores the version information which is helpful in determining compatibility
- *
-*/
+
 
 
 /*
