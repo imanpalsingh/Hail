@@ -2,7 +2,7 @@
 
 
 <h2> Introduction </h2>
-The datastructure is build on the STL library of c++17 standard.Vectors are used as building block of this structure. The datastruture provides useful functions to extract data from files, manipulate it and save files. While currently being in the development stage it can only do a bit.
+The datastructure is build on the STL library of c++17 standard.Vectors are used as building block of this structure. The datastructure provides useful functions to extract data from files, manipulate it and save files. While currently being in the development stage it can only do a bit.
 
 <h2>Implementation</h2>
  
