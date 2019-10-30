@@ -110,7 +110,7 @@ Example :-
  
  <h3> 1) Extraction operator (<<) </h3>
  
- The Extractiom operator is overloaded. Meaning that the datastructure can be directly printed.
+ The Extraction operator is overloaded. Meaning that the datastructure can be directly printed.
  
  For example
  
@@ -165,7 +165,7 @@ Example :-
  }
  ```
  
-The outout of the program would be
+The output of the program would be
 
 ```
  Id Price
