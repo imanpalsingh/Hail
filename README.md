@@ -177,7 +177,7 @@ The output of the program would be
  
  ```
  
-  > This project is under development
+  > This project is merged with CML repository. No futher development here
  
  
  
